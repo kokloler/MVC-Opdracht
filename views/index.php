@@ -36,40 +36,13 @@
     </header>
     <main>
         <div class="container">
-            <?php
-            // Verbinding maken met de database
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "faq";
-            $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-            if (!$conn) {
-                die("Connection failed: " . mysqli_connect_error());
-            }
+        <?php
+        include("..//controllers/index.php");
+        ?>
 
-            $sql = "SELECT vraag, antwoord FROM faq"; // Query om gegevens op te halen
-
-            $result = mysqli_query($conn, $sql);
-
-            if (mysqli_num_rows($result) > 0) {
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo '<div class="faq">';
-                    echo '<div class="faq-question">';
-                    echo '<h2>' . $row['vraag'] . '</h2>';
-                    echo '<i class="fas fa-chevron-down"></i>';
-                    echo '</div>';
-                    echo '<div class="faq-answer">';
-                    echo '<p>' . $row['antwoord'] . '</p>';
-                    echo '</div>';
-                    echo '</div>';
-                }
-            } else {
-                echo "<p>Geen vragen en antwoorden beschikbaar.</p>";
-            }
-
-            mysqli_close($conn);
-            ?>
+           
+        
         </div>
 
         <div class="faq-help">
