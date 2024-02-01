@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles2.css">
 </head>
 
 <body>    
@@ -10,6 +10,6 @@
     require "controller.php";
     ?>
     </p> 
-    <a href = "view2.php"> change colors</a>
+    <a href = "view.php"> change colors</a>
 </div>
 </body>

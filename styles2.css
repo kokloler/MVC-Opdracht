@@ -1,0 +1,34 @@
+body { 
+    background-color: crimson;
+  }
+
+.box {
+    width: 95%;
+    height: 100%;
+    border: 5px solid orange;
+    padding: 10px;
+    margin: 10px;
+    background-color: blueviolet;
+  }
+  .faq { 
+    color: white;
+  }
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: orange;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: orange;
+  }
